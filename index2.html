@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple IIFE Featuring Star Wars</title>
+</head>
+<body>
+	<h1>In a galaxy far, far away...</h1>
+	<p id="message"></p>
+
+	<button id="btn-checkobject">Check Star Wars Object</button>
+	<br>
+
+	<button id="btn-lightlist">Get Light Side Players</button>
+
+	<button id="btn-darklist">Get Dark Side Players</button>
+
+	<br>
+
+	<button id="btn-getRLocation" whoIsIt="Count Dooku">Count Dooku wants the Resistance Location</button>
+
+	<button id="btn-getRLocation2" whoIsIt="Luke Skywalker">Luke wants the Resistance Location</button>
+
+	<br>
+
+	<button id="btn-removeanakin">Switch Anakin To Dark</button>
+
+	<button id="btn-removeobiwan">Obi Wan Dies</button>
+
+	<hr>
+
+	<h2>May the Force be with you:</h2>
+	<label>Name:</label><input id="newperson" type="text" value="chief">
+	<p>Choose your affiliation:</p>
+	
+	<input type="radio" name="whichside" value="1" checked>Good<br>
+	<input type="radio" name="whichside" value="2">Evil<br>
+	<input type="radio" name="whichside" value="0">Jedi<br>
+
+	<button id="btn-signup">Sign Up</button>
+	<hr>
+
+	<script type="text/javascript" src="javascripts/dark.js"></script> <!-- declares Starwars Object -->
+	<script type="text/javascript" src="javascripts/light.js"></script> <!-- add to Starwars Object with vars availble only here -->
+	<script type="text/javascript" src="javascripts/main.js"></script> <!-- main functionality of view -->
+</body>
+</html>

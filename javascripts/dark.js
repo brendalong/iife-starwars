@@ -4,7 +4,10 @@ console.log("hello dark side");
 
 var StarWars = (function(){
 	var location = "The Unknown Regions";
-	var keyplayers = ["Count Dooku", "Darth Maul","General Grievous", "Greedo", "Jango Fett", "Darth Sidious"];
+	var keyplayers = ["Count Dooku", "Darth Maul", "General Grievous", "Greedo", "Jango Fett", "Darth Sidious"];
+
+
+	//for private variables create public get and set for values
 
 	return { //this is an object with 2 methods(properties)
 		getEvil: function(){
@@ -14,7 +17,7 @@ var StarWars = (function(){
 
 		setEvil: function(who){
 			keyplayers.push(who);
-			console.log("keyplayers", keyplayers);
+			console.log("evil players", keyplayers);
 		}
 
 	}

@@ -9,6 +9,7 @@ var StarWars = (function(originalStarWars){
 
 	originalStarWars.addJedi = function(who){
 		jedi.push(who);
+		console.log("jedi list", jedi);
 	};
 
 	originalStarWars.getJedi = function(){
@@ -22,6 +23,7 @@ var StarWars = (function(originalStarWars){
 
 	originalStarWars.setPlayer = function(who){
 		keyplayers.push(who);
+		console.log("set new player", keyplayers);
 	};
 
 	originalStarWars.removeJedi = function(who, name){
@@ -54,7 +56,7 @@ var StarWars = (function(originalStarWars){
 		});
 		
 		if (tell){
-			console.log("location", location);
+			console.log(whoAsks, "is on the good side. Location:", location);
 			return location;
 		}else {
 			var message = "You're evil, can't tell you";
@@ -66,5 +68,10 @@ var StarWars = (function(originalStarWars){
 	return originalStarWars;
 
 })(StarWars);
+
+//option 2
+//allows any iife to load first. Otherwise must declare the object.
+
+// })(Starwars || {});
 
 
