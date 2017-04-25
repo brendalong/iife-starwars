@@ -34,15 +34,15 @@ var StarWars = (function(originalStarWars){
 		jedi.forEach(function(item, index) {
 			if (item === who){
 				whichIndex = index;
+				jedi.splice(whichIndex, 1); 
+				console.log("jedi after death", jedi);
+				//if dead, no new name
+				if (name){
+					//going to dark side results in new name
+					StarWars.setEvil(name);
+				}
 			}
 		});
-		jedi.splice(whichIndex, 1); 
-		console.log("jedi after death", jedi);
-		//if dead, no new name
-		if (name){
-			//going to dark side results in new name
-			StarWars.setEvil(name);
-		}
 	};
 
 	originalStarWars.getLocation = function(whoAsks){
